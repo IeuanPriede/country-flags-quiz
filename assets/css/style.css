@@ -6,11 +6,12 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* General styles */
 #background-image {
-    height: 850px;
+    height: 800px;
     width: 100%;
     background: url("../images/A_large_blank_world_map_with_oceans_marked_in_blue.png") no-repeat center center/cover;
     position: fixed;
@@ -23,9 +24,10 @@
     background-color: rgba(2, 1, 0, 0.8);
     display: block;
     margin: 10%;
+    box-shadow: 0 0 10px 2px;
 }
 
-.question-area {
+#question-area {
     padding: 0 10px;
     max-width: 15rem;
     display: block;
@@ -33,7 +35,7 @@
     margin-right: auto;
 }
 
-.question-area img {
+#question-area img {
     width: 100%;
     height: 125px;
 }
@@ -43,7 +45,6 @@
     padding-bottom: 30px;
     color: white;
     text-align: center;
-    display: block;
 }
 
 .score-area {
@@ -55,9 +56,10 @@
 
 button {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
     width: 200px;
     height: 40px;
-    
+    border-radius: 10px;
 }
 
 /* Main content */
