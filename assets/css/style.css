@@ -36,7 +36,6 @@
 
 .answer-area {
     padding: 10px;
-    padding-bottom: 30px;
     color: white;
     text-align: center;
 }
@@ -53,7 +52,8 @@ button {
     font-size: 20px;
     width: 200px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
 }
 
 /* Main content */
@@ -72,6 +72,6 @@ body {
 }
 
 h2 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-size: 22px;
 }
