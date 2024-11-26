@@ -47,7 +47,7 @@
 }
 
 #correct {
-    padding-left: 20%;
+    padding-left: 18%;
 }
 
 #incorrect {
@@ -71,12 +71,4 @@ body {
 h2 {
     padding-bottom: 30px;
     font-size: 22px;
-}
-
-#correct {
-    padding-left: 30px;
-}
-
-#incorrect {
-    padding-left: 60px;
 }
