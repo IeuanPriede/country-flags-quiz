@@ -1,6 +1,14 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
 #background-image {
     height: 600px;
     width: 100%;
@@ -8,12 +16,23 @@
     position: relative;
 }
 
+/* Main content */
 .heading {
     padding: 20px 20%;
     text-align: center;
     font-family: 'Bangers', sans-serif;
+    font-size: 38px;
 }
 
 body {
     font-family: 'Cormorant', sans-serif;
+}
+
+/* Game layout */
+
+#game-area {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(99, 139, 126, 0.6);
+    position: absolute;
+
 }
