@@ -9,14 +9,6 @@
     box-sizing: border-box;
 }
 
-/* General styles */
-#background-image {
-    height: 800px;
-    width: 100%;
-    background: url("../images/A_large_blank_world_map_with_oceans_marked_in_blue.png") no-repeat center center/cover;
-    position: fixed;
-}
-
 /* Game layout */
 
 #game-area {
@@ -24,6 +16,8 @@
     background-color: rgba(2, 1, 0, 0.8);
     display: block;
     margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     box-shadow: 0 0 10px 2px;
 }
 
@@ -73,6 +67,7 @@ button {
 }
 
 body {
+    background: url("../images/A_large_blank_world_map_with_oceans_marked_in_blue.png") no-repeat center center/cover;
     font-family: 'Noto Sans', sans-serif;
 }
 
