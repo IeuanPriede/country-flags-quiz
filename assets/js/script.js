@@ -1,3 +1,7 @@
+function startGame() {
+    
+}
+
 function selectNextQuestion() {
 
 }
