@@ -21,11 +21,16 @@
 #game-area {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(2, 1, 0, 0.8);
+    display: block;
     margin: 10%;
 }
 
 .question-area {
     padding: 0 10px;
+    max-width: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .question-area img {
@@ -44,14 +49,8 @@
 .score-area {
     padding: 10px;
     color: white;
-}
-
-#correct {
-    padding-left: 18%;
-}
-
-#incorrect {
-    padding-left: 10%;
+    text-align: center;
+    font-size: 25px;
 }
 
 /* Main content */
