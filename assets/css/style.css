@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
 #background-image {
     height: 600px;
     width: 100%;
@@ -6,5 +9,11 @@
 }
 
 .heading {
+    padding: 20px 20%;
     text-align: center;
+    font-family: 'Bangers', sans-serif;
+}
+
+body {
+    font-family: 'Cormorant', sans-serif;
 }
