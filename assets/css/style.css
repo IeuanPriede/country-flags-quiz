@@ -11,7 +11,7 @@
 
 /* Game layout */
 
-#game-area {
+.container {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(2, 1, 0, 0.8);
     display: block;
@@ -19,6 +19,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     box-shadow: 0 0 10px 2px;
+    height: 600px;
 }
 
 #question-area {
@@ -54,6 +55,16 @@ button {
     height: 40px;
     border-radius: 20px;
     margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.hide {
+    display: none;
 }
 
 /* Main content */
@@ -69,6 +80,7 @@ button {
 body {
     background: url("../images/A_large_blank_world_map_with_oceans_marked_in_blue.png") no-repeat center center/cover;
     font-family: 'Noto Sans', sans-serif;
+    height: 650px;
 }
 
 h2 {

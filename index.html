@@ -17,24 +17,28 @@
 </head>
 <body>
     <section id="background-image">
-        <div id="game-area">
+        <div class="container">
             <h1 class="heading">Country Flags Quiz <i class="fa-solid fa-earth-americas"></i></h1>
-            <div id="question-area" class="hide">
-                <button id="">Start</button>
-                <button id="">Next</button>
-                <div id="question"><img src="assets/images/Flag_of_Latvia.svg.png" alt="Flag of Latvia" ></div>
-            </div>
-            <div class="answer-area">
-                <h2>Please select the correct answer:</h2>
-                <div class="answer-buttons">
-                    <button class="btn">Latvia</button>
-                    <button class="btn">Austria</button>
-                    <button class="btn">Armenia</button>
-                    <button class="btn">France</button>
+            <div id="game-area">
+                <div id="question-area">
+                    <div id="question"><img src="assets/images/Flag_of_Latvia.svg.png" alt="Flag of Latvia" ></div>
+                </div>
+                <div class="answer-area hide">
+                    <h2>Please select the correct answer:</h2>
+                    <div class="answer-buttons">
+                        <button class="btn">Latvia</button>
+                        <button class="btn">Austria</button>
+                        <button class="btn">Armenia</button>
+                        <button class="btn">France</button>
+                    </div>
+                </div>
+                <div class="score-area hide">
+                    <p1>Score: <span id="score">0</span>/10</p1>
                 </div>
             </div>
-            <div class="score-area">
-                <p1>Score: <span id="score">0</span>/10</p1>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
         </div>
     </section>
