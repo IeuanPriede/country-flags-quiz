@@ -19,7 +19,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     box-shadow: 0 0 10px 2px;
-    height: 600px;
+    height: 630px;
 }
 
 #question-area {
@@ -65,6 +65,10 @@ button {
 
 .hide {
     display: none;
+}
+
+#start-btn {
+    margin-top: 160px;
 }
 
 /* Main content */
