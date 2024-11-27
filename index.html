@@ -21,19 +21,19 @@
             <h1 class="heading">Country Flags Quiz <i class="fa-solid fa-earth-americas"></i></h1>
             <div id="game-area" class="hide">
                 <div id="question-area">
-                    <img id="question" src="assets/images/Flag_of_Latvia.svg.png" alt="Flag of Latvia">
+                    <img id="question" src="" alt="Flag">
                 </div>
                 <div class="answer-area">
                     <h2>Please select the correct answer:</h2>
                     <div id="answer-buttons">
-                        <button class="btn">Answer 1</button>
-                        <button class="btn">Answer 2</button>
-                        <button class="btn">Answer 3</button>
-                        <button class="btn">Answer 4</button>
+                        <button class="btn" onclick="checkAnswer(this)">Answer 1</button>
+                        <button class="btn" onclick="checkAnswer(this)">Answer 2</button>
+                        <button class="btn" onclick="checkAnswer(this)">Answer 3</button>
+                        <button class="btn" onclick="checkAnswer(this)">Answer 4</button>
                     </div>
                 </div>
                 <div class="score-area">
-                    <p1>Score: <span id="score">0</span>/10</p1>
+                    <div>Score: <span id="score">0</span>/10</div>
                 </div>
             </div>
             <div class="controls">
@@ -42,9 +42,7 @@
             </div>
         </div>
     </section>
-   
 
-    
     <script src="assets/js/script.js"></script>
 </body>
 <!-- font awesome script -->
