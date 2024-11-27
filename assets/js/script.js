@@ -5,7 +5,7 @@ const questionAreaElement = document.getElementById('question-area');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const question1Element = document.getElementById('question1');
 
-let currentQuestionIndex
+
 
 startButton.addEventListener('click', startGame);
 
@@ -15,14 +15,6 @@ function startGame() {
     gameAreaElement.classList.remove('hide');
     question1Element.classList.remove('hide');
     setNextQuestion();
-}
-
-function setNextQuestion() {
-    showQuestion(currentQuestionIndex)
-}
-
-function showQuestion(questionArea) {
-    questionElement.src= question.question
 }
 
 function checkAnswer() {
@@ -37,14 +29,3 @@ function gameArea() {
 
 }
 
-const questions = [
-     {
-      question: '',
-      answers: [
-        { text: 'Latvia', correct: true },
-        { text: 'Austria', correct: false },
-        { text: 'Armenia', correct: false},
-        { text: 'France', correct: false}
-      ]
-    },
-]
