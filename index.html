@@ -25,20 +25,13 @@
             <div id="game-area" class="hide">
                 <div id="question-area">
                     <!-- Flag images -->
-                    <img id="question1" src="assets/images/Flag_of_Latvia.svg.png" alt="Flag" class="hide">
-                    <img id="question2" src="assets/images/Flag_of_Ghana.svg.png" alt="Flag" class="hide">
+                    <img id="flag" src="" alt="Flag">
                 </div>
-                <div class="answer-area">
+                <div id="answers" class="answer-area">
                     <h2>Please select the correct answer:</h2>
-                    <div id="answer-buttons">
-                        <button class="btn" onclick="checkAnswer(this)">Answer 1</button>
-                        <button class="btn" onclick="checkAnswer(this)">Answer 2</button>
-                        <button class="btn" onclick="checkAnswer(this)">Answer 3</button>
-                        <button class="btn" onclick="checkAnswer(this)">Answer 4</button>
-                    </div>
                 </div>
                 <div class="score-area">
-                    <div>Score: <span id="score">0</span>/10</div>
+                    <div id="result">Score: <span id="score">0</span>/10</div>
                 </div>
             </div>
             <div class="controls">
