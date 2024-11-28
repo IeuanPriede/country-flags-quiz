@@ -22,6 +22,20 @@ let resultText = document.getElementById("result");
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
 
+nextButton.addEventListener("click", () => {
+    currentFlagIndex = (currentFlagIndex + 1) % flags.length;
+    loadFlag();
+  });
+
+/* Shuffles questions */
+function shuffle(array) {
+    for (let i = array.legnth - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i+1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 /* Starts the game */
 function startGame() {
     console.log('Started');
@@ -30,15 +44,27 @@ function startGame() {
     resultText.textContent = "";
     /* Shows question image */
     flagImage.src = flags[currentFlagIndex].image;
-}
 
-function selectAnswer() {
-    
+    const correctAnswer = flags[currentFlagIndex].country;
+    const allOptions =shuffle(
+        flags
+          .map((flag) => flag.country) 
+          .filter((country) => country !== correctAnswer)
+          .slice(0,9)
+          .concat(correctAnswer)
+    );
 }
 
 /* Checks for correct/wrong answers */
-function checkAnswer() {
-
+function checkAnswer(selectedOption) {
+    const correctAnswer = flags[currentFlagIndex].country;
+    if (selectedOption === correctAnswer) {
+        resultText.textContent = "Correct!";
+        resultText.style.color = "green";
+    } else {
+        resultText.textContent = `Wrong! The correct answer is ${correctAnswer}.`;
+        resultText.style.color = "red";
+    }
 }
 
 /* Counts score */
