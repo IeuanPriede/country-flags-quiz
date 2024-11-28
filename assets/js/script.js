@@ -16,7 +16,8 @@ let nextButton = document.getElementById('next-btn');
 let gameAreaElement = document.getElementById('game-area');
 let questionAreaElement = document.getElementById('question-area');
 let flagImage = document.getElementById("flag");
-let answers = document.getElementById("answers");
+let answersElement = document.getElementById("answers");
+let resultText = document.getElementById("result");
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -26,6 +27,9 @@ function startGame() {
     console.log('Started');
     startButton.classList.add('hide');
     gameAreaElement.classList.remove('hide');
+    resultText.textContent = "";
+    /* Shows question image */
+    flagImage.src = flags[currentFlagIndex].image;
 }
 
 function selectAnswer() {
